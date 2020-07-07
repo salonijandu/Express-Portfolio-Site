@@ -1,5 +1,40 @@
 extends layout
 
 block content
+  section.mb-4
+  h2.h1-responsive.font-weight-bold.text-center.my-4 Contact Me
   br
-  h1=title
+  .row(style='width: 80%; margin: auto')
+    .col-md-9.mb-md-0.mb-5(style='border-right: 1px solid black')
+      form
+        .row
+          .col-md-6
+            .md-form.mb-0
+              label(for='name') Your name
+              input#name.form-control(type='text' name='name')
+          .col-md-6
+            .md-form.mb-0
+              label(for='email') Your email
+              input#email.form-control(type='text' name='email')
+        .row
+          .col-md-12
+            .md-form.mb-0
+              label(for='subject') Subject
+              input#subject.form-control(type='text' name='subject')
+        .row
+          .col-md-12
+            .md-form
+              label(for='message') Your message
+              textarea#message.form-control.md-textarea(type='text' name='message' rows='2')
+      .text-center.text-md-left
+        br
+        a.btn.btn-primary Send
+      .status
+    .col-md-3.text-center
+      ul.list-unstyled.mb-0
+        li
+          p +1 (249)-989-1282
+        li
+          p 31 Gordon Drive, Brampton, ON, L6Y 2A8
+        li
+          p jandusaloni@gmail.com
